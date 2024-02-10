@@ -1,14 +1,14 @@
 @font-face {
   font-family: Inter;
-  src: url(/Inter-Regular.ttf);
+  src: url(./Inter-Regular.ttf);
 }
 @font-face {
   font-family: InterB;
-  src: url(/Inter-Bold.ttf);
+  src: url(./Inter-Bold.ttf);
 }
 @font-face {
   font-family: InterSB;
-  src: url(/Inter-SemiBold.ttf);
+  src: url(./Inter-SemiBold.ttf);
 }
 * {
   box-sizing: border-box;
