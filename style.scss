@@ -1,0 +1,81 @@
+$green: hsl(75, 94%, 57%);
+$White: hsl(0, 0%, 100%);
+$Grey: hsl(0, 0%, 20%);
+$DarkGrey: hsl(0, 0%, 12%);
+$OffBlack: hsl(0, 0%, 8%);
+
+@font-face {
+  font-family: Inter;
+  src: url(/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: InterB;
+  src: url(/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: InterSB;
+  src: url(/Inter-SemiBold.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $OffBlack;
+  height: 100vh;
+  color: $White;
+  .container {
+    background: $DarkGrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.6rem;
+    padding: 2rem;
+    width: 400px;
+    @media screen and (max-width: 600px) {
+      width: 80%;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+    }
+    h2 {
+      font-family: InterB;
+    }
+    h6 {
+      font-family: InterSB;
+      color: $green;
+      margin: 8px 0 16px;
+    }
+    p {
+      font-family: Inter;
+    }
+    div {
+      width: 100%;
+
+      a {
+        width: 100%;
+        margin: 0.9rem 0;
+        padding: 0.8rem;
+        text-align: center;
+        display: block;
+        font-family: InterSB;
+        text-decoration: none;
+        color: $White;
+        background: $Grey;
+        border-radius: 4px;
+        transition: background ease 300ms;
+        &:hover {
+          background: $green;
+          color: $OffBlack;
+        }
+      }
+    }
+  }
+}
